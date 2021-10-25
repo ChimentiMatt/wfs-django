@@ -27,7 +27,7 @@ def ContactView(request):
 def StayUpToDateView(request):
     return render(request, 'myapp/stayuptodate.html')
 
-# heroku test push
+# heroku test push installed gunicorn
 
 # def myview(request):
 #     myinstances = MyModel.objects.all()
