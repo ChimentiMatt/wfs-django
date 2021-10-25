@@ -1,0 +1,18 @@
+{% extends 'myapp/base.html' %}  
+{% load static %}
+
+{% block sutd %}
+    <div id="stayUpToDatePage">
+        <p id="stayUpToDatePageHeader">Stay Up To Date</p>
+        <p id="stayUpToDatePageText">Want to stay up to date with the Symphony's latest news and events?</p>
+        <p id="stayUpToDatePageText">Be notified of upcoming events and concerts.</p>
+        <p id="stayUpToDatePageText">Never miss a concert</p>
+        <form id="stayUpToDatePageFormContainer">
+            <p >Name</p>
+            <input id="stayUpToDatePageNameInput"></input>
+            <p>Email</p>
+            <input id="stayUpToDatePageEmailInput" type='email'></input>
+            <button id="stayUpToDatePageBtn">Submit</button>
+        </form>
+    </div>
+{% endblock %}

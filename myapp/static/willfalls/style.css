@@ -1,0 +1,1861 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/* Navbar--------------------------------------------------------------------------------------------- */
+
+
+  
+#containerHeader{
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    height: 7vh;
+    /* color: white; */
+}
+
+#containerHeaderLeft{ 
+    align-items: center;
+    display: flex;
+    top: 0;
+    left: 25px;
+    height: 7vh;
+    width: 33%;
+    text-decoration: none;
+}
+  
+#containerHeaderLeft img {
+height: 60%;
+}
+
+  
+#logoText{
+    text-decoration: none;
+    color: #333;
+    color: black;
+    color: #093963;
+    color: #1d1d1d;
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: 1rem;
+}
+
+#mobileDropDownBtn{
+    display: none;
+}
+
+#mobileDropDownBtnX{
+    display: none;
+}
+
+
+#containerHeaderMiddle{
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.middleLink{
+    text-decoration: none;
+    color: #093963;
+    /* font-weight: bold;   */
+    color: #1d1d1d;
+}
+  
+.middleLink:hover{
+    cursor: pointer;
+    color: #093963;
+}
+
+#downMenuIcon{
+    position: relative;
+    top: 3px;
+}
+
+#containerHeaderRight{ 
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    height: 7vh;
+    width: 33%;
+    /* font-weight: bold; */
+    /* padding-right: 5rem; */
+}
+  
+#containerHeaderRight p:hover{
+    opacity: .8;
+}
+
+.rightLink{
+    color: #093963;
+    text-decoration: none;
+    color: #1d1d1d;
+    margin-right: 1rem;
+}
+#rightLinkId2{
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.rightLink:hover{
+    cursor: pointer;
+    color: #093963;
+}
+  
+
+
+/* Faceplate -------------------------------------------------------------------------- */
+
+#facePlate{
+    height: 93vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#facePlateText{
+    color: white;
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+
+
+/* About The section Section -------------------------------------------------------------- */
+
+#aboutTheSymphonySection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 4rem;
+}
+
+#aboutTheSymphonySection h1{
+    font-size: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    color: #093963;
+    color: #1d1d1d;
+    color: black;
+}
+
+#cardsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+#landingCard1{
+    display: flex;
+    height: 17rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+#landingCard1Left{
+    width: 60%;
+    object-fit: contain;
+}
+  
+#landingCard1Link{
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+  
+
+#landingCard1Left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#landingCardText{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+#landingCard1Right{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    background-color: #333;
+    background: #1d1d1d;
+    background-color: #093963;
+}
+
+#landingCard2{
+    display: flex;
+    height:15rem;
+    height: 17rem;
+    margin-top: 2rem;
+  }
+  
+  #landingCard2Left{
+    width: 50%;
+  }
+  
+  #landingCard2Left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  #landingCard2Right{
+    width: 50%;
+    margin-left: 3%;
+  }
+  
+  #landingCard2Right img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  #landingCard1Title{
+    font-size: 2.5rem;
+    /* display: none; */
+  }
+  
+
+
+
+
+
+
+
+  #landingCardTitles{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #cardBottomTitleLeft{
+    width: 50%;
+  }
+
+  .header{
+    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: #1d1d1d;
+    color: #093963;
+  }
+
+  #cardBottomText{
+    font-size: 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    color: #1d1d1d;
+    font-weight: lighter;
+  }
+
+  .learnMoreLink{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: .5rem;
+    color: #093963;
+    color: #333;
+    color: black;
+  }
+  #cardBottomTitleRight{
+    width: 50%;
+    margin-left: 3%;
+  }
+
+
+
+  /* Landing Address Section */
+
+  #addressSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 7vh; */
+    margin-bottom: 20vh;
+    height: 60vh;
+    background: #333;
+    background-color: #093963;
+    background-color: #1d1d1d;
+    color: white;
+  }
+  #addressLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+    height: 60%;
+    width: 45%;
+  }
+  #addressLeft p{
+    margin-top: .2rem;
+    font-size: 1.5rem;
+  }
+  
+  
+#addressTitle{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+
+/* Landing Give Back Section */
+
+#landingGiveBackContainer{
+  margin-top: 20vh;
+  margin-bottom: 21vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: #fcfc29;
+  color: black;
+  text-align: center;
+}
+
+#giveBackTitle{
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#landingGiveBackText{
+  color: white;
+  color: #333;
+  text-align: center;
+  margin-left: 30vw;
+  margin-right: 30vw;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#giveBackBtn{
+  background: #fcfc29;
+  background: #093963;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+  color: white;
+  border-radius: .2rem;
+}
+
+#giveBackBtn:hover{
+  background: #333;
+}
+
+#giveBackRightBtn:hover{
+  opacity: .8;
+}
+
+
+/* Landing Contact From Section */
+
+#contactFormSection{
+  display: flex;
+  align-items: center;
+  height: 35rem;
+  margin-top: 5rem;
+  background-color: #093963;
+  background: #1a1a1a;
+}
+
+#messageSent{
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  background-color: white;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#contactImgContainer{
+  width: 65%;
+  height: 100%;
+}
+
+#contactImgContainer img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#formRight{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 40vw;
+}
+
+#formRight input{
+  width: 25rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid #093963;
+  padding: .5rem;
+}
+
+#contactTitle{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  height: 10%;
+  color: white;
+  font-weight: bold;
+}
+
+#contactName{
+  margin-top: 1rem;
+}
+
+#contactName:focus{
+  outline-width: 0;
+}
+
+#contactEmail{
+  /* width: 48%; */
+}
+
+#contactEmail:focus{
+  outline-width: 0;
+}
+
+#contactSuject{
+  /* width: 99%; */
+}
+
+#contactSuject:focus{
+  outline-width: 0;
+}
+
+#contactMessage{
+  height: 4rem;
+  padding: .5rem;
+  resize: none
+}
+
+#formRight textarea{
+  width: 25rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-bottom: 1px solid #093963;
+  padding-left: .5rem;
+}
+
+#contactMessage:focus{
+  outline-width: 0;
+}
+
+#submitBtn{
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  margin-top: 1rem;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight: bold;
+  text-align:1;
+  transition: all 0.2s;
+  padding: 1rem;
+  border: none;
+  border-radius:.2rem;
+  font-size: 1.2em;
+  width: 26rem;
+  background-color: white;
+  background-color:#093963;
+  background-color: white;
+  color: #1d1d1d;
+}
+
+#submitBtn:hover{
+  background-color: #1d1d1d;
+  color: white;
+}
+
+
+
+/* About Page ------------------------------------------------------------------------------------------------------ */
+
+#aboutNavbarMobile{
+  display: none;
+}
+
+#aboutNavbar{
+  display: none;
+}
+#aboutPage{ 
+  /* background:  #093963; */
+}
+
+#aboutContentContainer{
+  display: flex;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  width: 60vw;
+
+  margin-top: 4rem;
+}
+
+#aboutNavbar{
+  display: block;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 7em;
+  width: 9rem;
+}
+
+#aboutNavbarRight{
+  width: 90%;
+  color: #333;
+}
+
+#aboutNavbarTitle{
+  border-bottom: 1px solid gray;
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: #093963;
+}
+
+.aboutNavbarLink{
+  text-decoration: none;
+  cursor: pointer;
+  color: #093963;
+  color: #333;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.100)  
+}
+
+#paddingTop1Rem{
+  padding-top: 1rem;
+}
+
+.aboutNavbarLink:hover{
+  color: #333;
+  color: #093963;
+  font-weight: bold;
+}
+
+#WFSContainer{
+  display: flex;
+}
+
+#AboutWFS{
+  font-size: 4rem;
+  font-weight: bolder;
+  margin-bottom: 2.5rem;
+  color: #093963;
+  color: #1d1d1d;
+
+}
+#aboutMark{
+  height: 30rem;
+}
+
+#spacing{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.200);
+}
+
+.AboutHeaders{
+  font-weight: bolder;
+  font-size: 3rem;
+  /* color: re; */
+}
+
+#aboutSymphonyImg{
+  height: 40rem;
+}
+
+.AboutTexts{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.boardTitlesTitle{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#boardOrchestraContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.friendsTitle{
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#friends{
+  display: flex;
+  justify-content: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+
+.friend{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+#communityColumnLeft{
+
+}
+
+#theBoardNamesColumnFriends p{
+
+}
+#theBoardContainer{
+  display: flex;
+}
+#theBoardTitleColumn{
+
+}
+.theBoardTitles{
+  margin-right: 5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.communityColumnLeft{
+  margin-right: 5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+}
+.communityColumnRight{
+  margin-right: 5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: 2rem;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#communityThankYou{
+  margin-top: 1rem;
+  text-align: center;
+  font-family: 'Work Sans', sans-serif;
+}
+
+#prospectivePlayers{
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+}
+
+#prosPGap{
+  margin-bottom: .5rem;
+}
+
+#playerName{
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color:#333;
+}
+
+#playerP{
+  margin-bottom: .5rem;
+  font-family: 'Work Sans', sans-serif;
+  color:#333;
+}
+
+#playerLeftRight{
+  display: flex
+}
+#playerImg{
+  height: 20rem;
+
+}
+#playerRight{
+  margin-left: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Page ------------------------------------------------------------------------------------------------------ */
+
+#contactPage{ 
+  display: flex;
+  flex-direction: column;
+}
+
+#contactPageHeader{
+  font-weight: 900;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #093963; 
+  color: #1d1d1d;
+  font-size: 4rem;
+}
+
+#contactPageMiddleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#contactPageMap{
+  margin-top: 2.5rem;
+  height: 20rem;  
+  background-color: wheat;
+}
+
+#contactPageRows{
+  display: flex;
+  width: 50rem;
+}
+#contactPageRowsRight{
+  margin-left: 8rem;
+}
+
+#contactPageTitle{
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#contactPagePreLoc{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #093963;
+  color: #333;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+#contactPageAddress{
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+}
+
+#contactPageFormHeader{
+  font-size: 3rem;
+  color: #093963;
+  color: #333;
+  font-weight: bold;
+}
+
+#contactPageForm{
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+#contactPageForm input{
+  border-radius: .2rem;
+  margin-bottom: .5rem;
+  height: 2rem;
+  padding-left: .5rem;
+  color: #333;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: 0rem;
+}
+#contactPageForm input:focus{
+  outline-width: 0;
+ }
+
+#contactPageForm input::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contactPageForm textarea{
+  border-radius: .2rem;
+  margin-bottom: .5rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding: .5rem;
+  color: white;
+  color: #333;
+  resize: none;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+#contactPageForm textarea:focus{
+  outline-width: 0
+}
+
+#contactPageForm textarea::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contactPageBtn{
+  border: none;
+  margin-bottom: .5rem;
+  float: right;
+  background-color: #093963;
+  color: white;
+
+  border-radius: .2rem;
+  font-weight: 900;
+  margin-top: .5rem;
+  box-shadow: 2px 5px 5px;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.2REM;
+}
+
+#contactPageBtn:hover{
+  background: #333;
+}
+
+#messageSentContactPage{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 50rem;
+  height: 30rem;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer  */
+
+#footerTop{
+  /* margin-top: 12.5rem; */
+  height: 5rem;
+  background-image: linear-gradient(to bottom, #093963, #1f3150, #24293e, #22232d, #1d1d1d);
+}
+
+.footerTitle{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+
+#footer{
+  background: #1d1d1d;
+  height: 15rem;
+  /* margin-top: 10rem; */
+}
+
+#footerContainer{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  color: white;
+  justify-content: space-between;
+}
+#footerLogo{
+  height: 4rem;
+}
+
+#footerLinks{
+  font-weight: bold;
+  display: flex;
+  width: 10rem;
+  justify-content: space-between;
+}
+
+.footerLink{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#footerBottom{
+  background-image: linear-gradient(to top, #1a1a1a, #1b1b1b, #1b1b1b, #1c1c1c, #1d1d1d);
+  color: rgb(128, 128, 128);
+  height: 4rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+
+
+
+/* Support Us Page ------------------------------------------------------------------------------------------------------ */
+
+
+
+#supportUsPage{ 
+  background-color: white;
+}
+
+#paymentTitle{
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #093963;
+  color: #1d1d1d;
+}
+
+#paymentContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 85vh;
+  color: black;
+}
+
+#inputAmountContainer{
+  margin-top: 2rem;
+}
+#inputAmountContainer input{
+  margin-top: .5rem;
+  padding: .5rem;
+  color: #333;
+  font-size: 2rem;
+}
+
+#inputAmountContainer p {
+  color: #333;
+  margin-right: 2rem;
+}
+
+
+#paymentText{
+  color: #333;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+#checkboxAmountContainer{
+  display: flex;
+  align-items: center;
+  color: #333;
+  margin-top: 2rem;
+}
+#donateCheckbox{
+  margin-right: .5rem;
+}
+
+#disclaimerText{
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+
+
+
+
+/* Contact Page ------------------------------------------------------------------------------------------------------ */
+
+#contactPage{ 
+  display: flex;
+  flex-direction: column;
+}
+
+#contactPageHeader{
+  font-weight: 900;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #093963; 
+  color: #1d1d1d;
+  font-size: 4rem;
+}
+
+#contactPageMiddleContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#contactPageMap{
+  margin-top: 2.5rem;
+  height: 20rem;  
+  background-color: wheat;
+}
+
+#contactPageRows{
+  display: flex;
+  width: 50rem;
+}
+#contactPageRowsRight{
+  margin-left: 8rem;
+}
+
+#contactPageTitle{
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#contactPagePreLoc{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #093963;
+  color: #333;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+#contactPageAddress{
+  font-family: 'Work Sans', sans-serif;
+  color: #333;
+}
+
+#contactPageFormHeader{
+  font-size: 3rem;
+  color: #093963;
+  color: #333;
+  font-weight: bold;
+}
+
+#contactPageForm{
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+#contactPageForm input{
+  border-radius: .2rem;
+  margin-bottom: .5rem;
+  height: 2rem;
+  padding-left: .5rem;
+  color: #333;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  font-size: 2rem;
+  padding: .5rem;
+  border-radius: 0rem;
+}
+#contactPageForm input:focus{
+  outline-width: 0;
+ }
+
+#contactPageForm input::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contactPageForm textarea{
+  border-radius: .2rem;
+  margin-bottom: .5rem;
+  height: 5rem;
+  font-size: 2rem;
+  padding: .5rem;
+  color: white;
+  color: #333;
+  resize: none;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+}
+
+#contactPageForm textarea:focus{
+  outline-width: 0
+}
+
+#contactPageForm textarea::placeholder{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#contactPageBtn{
+  border: none;
+  margin-bottom: .5rem;
+  float: right;
+  background-color: #093963;
+  color: white;
+
+  border-radius: .2rem;
+  font-weight: 900;
+  margin-top: .5rem;
+  box-shadow: 2px 5px 5px;
+  padding: 1rem 2rem 1rem 2rem;
+  font-size: 1.2REM;
+}
+
+#contactPageBtn:hover{
+  background: #333;
+}
+
+#messageSentContactPage{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  width: 50rem;
+  height: 30rem;
+  background-color: white;
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+
+/* Stay Up To Date Page ------------------------------------------------------------------------------------------------------ */
+
+#stayUpToDatePage{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: 85vh;
+  margin-left: 30vw;
+}
+#stayUpToDatePageHeader{
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #093963;
+  color: #1d1d1d;
+}
+
+#stayUpToDatePageText{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+#stayUpToDatePageFormContainer{
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+#stayUpToDatePageNameInput{
+  width: 30rem;
+  padding: .5rem;
+  border-radius: 0rem;
+  font-size: 2rem;
+  color:#333;
+  height: 2rem;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: .5rem;
+}
+
+#stayUpToDatePageEmailInput{
+  width: 30rem;
+  padding: .5rem;
+  border-radius: 0rem;
+  font-size: 2rem;
+  color:#333;
+  height: 2rem;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  margin-bottom: .5rem;
+}
+#stayUpToDatePageBtn{
+  border: none;
+  border-radius: .2rem;
+  background-color: #093963;
+  color: white;
+  margin-top: .5rem;
+  padding: 1rem 2rem 1rem 2rem;
+  width: 8rem;
+  font-size: 1.2rem;
+}
+#stayUpToDatePageBtn:hover{
+  background: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
+
+  #aboutNavbar{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 4em;
+    width: 9rem;
+  }
+}
+
+
+
+
+
+
+
+ @media (max-width: 1000px) {
+   /* Header ----------------------------------------------------------------------------------- */
+
+  #containerHeader{
+    top: 0;
+    height: 4rem;
+  }
+  #containerVidoePage{
+      height: 60vh;
+      margin-top: .5rem;
+  }
+
+  #prePlayText{
+   display: none;
+
+  }
+
+  #video{
+    margin-top: 3.5rem;
+    width: 200vw;
+    right: 10rem;
+
+  }
+
+  #playStop{
+    right: 1rem;
+    top: 50vh;
+
+  }
+  #containerHeaderRight{
+    display: none;
+  }
+  #containerHeaderMiddle{
+    display: none;
+  }
+  #containerHeaderLeft{
+    left: 2px;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  #containerHeaderLeft img{
+    justify-content: space-between;
+    height: 2rem;
+    margin-top: .5rem;
+    margin-left: .5rem;
+    
+  }
+  #logoText{
+    margin-top: .5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-left: 0rem;
+    margin-right: 1rem;
+  }
+
+  #dropDownContainer{
+    display: none;
+  }
+  #mobileDropDownBtn{
+    display: block;
+    position: relative;
+    z-index: 2000;
+    top: .5rem;
+    right: 4vw;
+    opacity: 1;
+  }
+
+
+  #mobileDropDownBtnX{
+    display: none;
+    position: relative;
+    z-index: 2000;
+    top: 1.5rem;
+    right: 4vw;
+    opacity: 1;
+  }
+
+  #mobileDropDown{
+    position: absolute;
+    border: 1px solid rgba(9, 57, 99, 0.5);
+    top: 1vh;
+    right: 2vw;
+    width: 96vw;
+    height: 19rem;
+    background-color: white;
+    border-radius: .5rem;
+    color: #333;
+  }
+
+  #mobileDropTitle{
+    color: #093963;
+    display: block;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  #modibleDropDownContainersTop{
+    display: flex;
+    display: none;
+    justify-content: space-between;
+    margin-right: 2rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
+
+  }
+
+  #dropDownDownMobileLearnMore{
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    padding: .7rem;
+    border-radius: .5rem;
+    border: none;
+    margin-left: 5%;
+    background-color: #093963;
+    color: white;
+    margin-right: 5%;
+    text-decoration: none;
+  }
+
+  #mobileDropTitleLeft{
+
+  }
+  #mobileDropPagesLeft{
+    display: flex;
+    width: 50%;
+
+    flex-direction: column;
+  }
+  #mobileDropPagesRight{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+  }
+  #landingBody h1{
+    font-size: 3rem;
+    display: none;
+  }
+
+  #mobileDropAbout{
+    display: block;
+    font-weight: bold;
+    padding-top: 1rem;
+    color: #333;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: .5rem;
+  }
+
+  .learnMoreLink{
+    font-size: 1rem;
+    color: #093963;
+    color: #1d1d1d;
+
+  }
+
+  #mobileDropP{
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding-top: .2rem;
+  }
+
+  #mobileAboutContainer{
+    display: flex;
+  }
+  #mobileAboutLinks{
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+  #mobileDropAbout{
+    display: block;
+  }
+  #mobileAboutLinks{
+    display: block;
+  }
+
+
+  #downMenuIcon2{
+    display: none;
+    margin-top: 1rem;
+  }
+
+  #mobileDropAboutContainer{
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Landing -----------------------------------------------------------------------------------------*/
+  #prePlayImage{
+    margin-top: 17vh;
+    display: none;
+  }
+
+  #landingBody{
+    margin-top: 1vh;
+    height: inherit;
+  }
+
+  #landingGiveBackContainer{
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  #giveBackTitle{
+
+    font-size: 3rem;
+  }
+
+  #landingGiveBackText{
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  #addressSection{
+    margin-top: 0rem;
+    flex-direction: column;
+    height: 36rem;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+    background: #1d1d1d;
+  }
+
+  #addressLeft{
+    width: 100%;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-left: 0;
+  }
+  #addressTitle{
+    text-align: center;
+    margin-bottom: 0rem;
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+
+  #addressLine{
+    margin-left: 1rem;
+  }
+
+  #landingCard2{
+    margin-top: 1rem;
+  }
+  #addressLeft p{
+
+    font-size: 1.3rem;
+  }
+
+  #addressRight{
+    width: 90%;
+    margin-top: 5rem;
+    height: 20rem;
+  }
+
+  #contactTitle{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  #formRight{
+    margin: 0;
+    width: 100%;
+  }
+
+  #contactImgContainer img{
+    display: none;
+  }
+
+  #contactImgContainer{
+    display: none;
+  }
+
+  #formRight input{
+    width: 15rem;
+  }
+  
+  #formRight textarea{
+    width: 15rem;
+  }
+  
+  #submitBtn{
+    padding: .7rem;
+    width: 16rem;
+
+  }
+  #cardBottomText{
+    font-size: 1rem;
+    display: none;
+  }
+  #messageSent{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  /* About Page --------------------------------------------------------------------- */
+  #aboutContentContainer{
+    width: 90vw;
+    margin-top: 2rem;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+  #aboutNavbar{
+    display: flex;
+    justify-content: center;
+    left: 0; 
+    width: 100vw;
+    flex-direction: row;
+    background-color: white;
+    display: none;
+  }
+  .aboutNavbarLink{
+    background-color: white;
+    font-size: .8rem;
+    border: none;
+  }
+  #aboutNavbarLinkMark{
+    margin-bottom: 1rem;
+  }
+
+  #aboutNavbarRight{
+    width: auto;
+  }
+
+  #aboutSymphonyImg{
+    width: 90vw;
+    height: auto;
+  }
+
+  #aboutMark{
+    width: 90vw;
+    height: auto;
+  }
+
+  #playerLeftRight{
+    flex-direction: column;
+  }
+  #playerImg{
+    width: 90vw;
+    height: auto;
+    margin-bottom: .5rem;
+  }
+  #playerRight{
+    margin-left: 0;
+  }
+
+  #aboutNavbarMobile{
+    display: flex;
+    padding-left: .5rem;
+    padding-right: .5rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.8rem;
+    font-size: .8rem;
+    background-color: #093963;
+    top: 0;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    text-decoration: none;
+    z-index: 1;
+  }
+
+  .aboutNavbarLinkMobile{
+    text-decoration: none;
+    color: #333;
+    color: black;
+    color: white;
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+  #AboutWFS{
+    font-size: 2.5rem;
+  }
+  
+  #cardsContainer{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    width: auto;
+  }
+  #landingCard1{
+    height: inherit;
+  }
+
+  #emphasizeText{
+    color: #093963;
+  }
+
+  #landingCard1Left{
+    display: none;
+
+  }
+
+  #landingCard1Right{
+    background-color: white;
+    color: black;
+    height: 10rem;
+    width: 100%;
+    padding: 1rem;
+  }
+  #landingCard1Link{
+    display: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1d1d1d;
+    color: #093963;
+  }
+
+  #landingCard1Title{
+    margin-top: 2.5rem;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    height: 4rem;
+    font-weight: bold;
+
+  }
+  .AboutHeaders{
+    font-size: 2rem;
+    
+  }
+  #landingCardTitles{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  #cardBottomTitleLeft{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+
+  }
+  #cardBottomTitleLeft p{
+    margin-top: 0rem;
+  }
+
+  .header{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+  }
+  #cardBottomTitleRight{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+
+  }
+  #cardBottomTitleRight p{
+    margin-top: 0rem;
+  }
+
+
+  #theBoardTitleColumn{
+    width: 50%;
+  }
+  .communityColumnLeft{
+    margin-right: 0;
+  }
+
+
+  #theBoardNamesColumn{
+    width: 50%;
+  }
+  .communityColumnRight{
+    margin-right: 0;
+  }
+
+  .friend{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+
+  /* Contact Page --------------------------------------------------------- */
+  #contactPageHeader{
+    font-size: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+  }
+  #contactPageMiddleContainer{
+    padding-left: 1rem;
+
+
+  }
+
+  #contactPageTitle{
+    font-size: 2rem;
+  }
+  #contactPageRows{
+    width: 20rem;
+    flex-direction: column;
+  }
+  #contactPageRowsRight{
+    
+    margin-left: 0rem;
+    margin-top: 1rem;
+  }
+  #contactPageMap{
+    width: 90%;
+  }
+  #contactPageFormHeader{
+    font-size: 2rem;
+  }
+  #contactPageForm input{
+    width: 87vw;
+  }
+  #contactPageForm textarea{
+    width: 87vw;
+  }
+  #contactPageBtn{
+    float: left;
+  }
+
+  #messageSentContactPage{
+    width: 100vw;
+    font-size: 3rem;
+    left: 0px;
+  }
+
+  /* Give back page --------------------------------------------------------- */
+  #paymentTitle{
+    margin-left: 1rem;
+    font-size: 3rem;
+  }
+  #inputAmountContainer{
+    margin-left: 1rem;
+  }
+  #paymentText{
+    margin-left: 1rem;
+  }
+  #checkboxAmountContainer{
+    margin-left: 1rem;
+  }
+  #disclaimerText{
+    margin-left: 1rem;
+  }
+  #paymentBtns{
+    width: inherit;
+  }
+
+  /* Stay up to date ---------------------------------------------------------------------- */
+  #stayUpToDatePageNameInput{
+    width: 19rem;
+  }
+  #stayUpToDatePageEmailInput{
+    width: 19rem;
+  }
+  #stayUpToDatePage{
+    margin-left: 1.5rem;
+  }
+  #stayUpToDatePageText{
+    font-size: 1rem;
+  }
+  #stayUpToDatePageHeader{
+    margin-bottom: 1rem;
+  }
+  #stayUpToDatePageFormContainer{
+    margin-top: 0rem;
+  }
+  /* Events --------------------------------------------------------------------- */
+  #eventsUpcomingTitle{
+    font-size: 3rem;
+  }
+
+  /* Footer ----------------------------------------------------------------------- */
+  #footer{
+    height: 35rem;
+  }
+  #footerContainer{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    flex-direction: column;
+  }
+  #footerLogo{
+    margin-top: 2.5rem;
+  }
+  #footerLinks{
+    margin-bottom: 2.5rem;
+    font-size: 1.5rem;
+    width: 15rem;
+
+  }
+
+}
+

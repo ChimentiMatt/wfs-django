@@ -1,0 +1,101 @@
+{% extends 'myapp/base.html' %}  
+{% load static %}
+
+{% block landing %}
+    <div id="facePlate">
+        <p id="facePlateText">WILLAMETTE FALLS SYMPHONY</p>
+    </div>
+
+    <div id="aboutTheSymphonySection">
+        <h1>ABOUT THE SYMPHONY</h1>
+        <div id="cardsContainer">   
+
+            <div id="landingCard1">
+                <div id="landingCard1Left">      
+                    <img src="{% static "willfalls/media/cardImg.jpeg" %}"></img>
+                </div>
+        
+                <div id="landingCard1Right">      
+                    <p id="landingCard1Title">WHO WE ARE</p>
+                    <p id="landingCardText">We are a <span id="emphasizeText">nonprofit community orchestra</span> in Oregon City.</p>
+                    <a href="{% url 'myapp:about' %}" id="landingCard1Link" to="about">LEARN MORE</a> 
+                </div>
+            </div>
+            
+    
+            <div id="landingCard2">
+                <div id="landingCard2Left">      
+                    <img src="{% static "willfalls/media/cardConductor.png" %}"></img>
+                </div>
+
+                <div id="landingCard2Right">      
+                    <img src="{% static "willfalls/media/cardGroup.jpeg" %}"></img>
+                </div>
+            </div>
+
+            <div id="landingCardTitles">
+                <div id="cardBottomTitleLeft">   
+                    <p class="header">MEET THE PLAYERS</p>
+
+        
+                    <a href="{% url 'myapp:about' %}" class="learnMoreLink">
+                        LEARN MORE
+                    </a> 
+                </div>
+                <div id="cardBottomTitleRight">
+                    <p class="header">UPCOMING EVENTS</p>
+
+
+                    <a href="{% url 'myapp:events' %}" class="learnMoreLink">
+                        LEARN MORE
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="addressSection">
+        <div id="addressLeft">
+            <h1 id="addressTitle">CONCERT ADDRESS</h1>
+            <div>
+                <p id="addressLine">Oregon City United Methodist Church</p>
+                <p id="addressLine">18955 S. South End Rd.</p>
+                <p id="addressLine">Oregon City, OR 97045-8331</p>
+            </div>
+
+        </div>
+    </div>
+    <div id="landingGiveBackContainer">
+        <p id="giveBackTitle">GIVE BACK TO THE SYMPHONY</p>
+        <div id="landingGiveBackContainerText">
+            <p id="landingGiveBackText">Thank you for your support. Please consider a donation to the Willamette Falls Symphony to help us continue giving back to the community and continue playing music we love.</p>
+
+            <p id="giveBackBtn" exact to="/supportus">SUPPORT US</p>
+
+        </div>
+    </div>
+
+    <div id="contactFormSection">
+        <div id="messageSent">
+            <p>Thank you for contacting the symphony</p>
+        </div>
+        <div id="contactImgContainer">
+
+            <img src="{% static "willfalls/media/contactImg.jpg" %}"></img>
+        </div>
+
+        <form id="formRight">
+            <p id="contactTitle">CONTACT US</p>
+    
+            <input id="contactName" placeholder="Name" name="name"></input>
+            <input id="contactEmail" placeholder="Email" name="email"></input>
+
+            <div>
+                <input id="contactSuject" placeholder="Subject" name="subject"></input>
+            </div>
+
+            <textarea id="contactMessage" type="text" placeholder="Type your message here" name="message"></textarea>
+            <button id="submitBtn" value="Send">SUBMIT</button>
+        </form>
+    </div>
+
+{% endblock landing %}

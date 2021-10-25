@@ -1,0 +1,56 @@
+{% extends 'myapp/base.html' %}  
+{% load static %}
+
+{% block contact %}
+    <div id="contactPage">
+        <div id="contactPageMiddleContainer">
+
+            <div>
+            <p id="contactPageHeader">CONTACT THE SYMPHONY</p>
+
+                <div id="contactPageRows">
+                    <div>
+                        <p id="contactPageTitle">Preformance Location</p>
+                        <p id="contactPageAddress">Oregon City United Methodist Church</p>
+                        <p id="contactPageAddress">18955 S. South End Rd.</p>
+                        <p id="contactPageAddress">Oregon City, OR 97045-8331</p>
+                    </div>
+                    <div id="contactPageRowsRight">
+                        <p id="contactPageTitle">Phone/Email</p>
+                        <p id="contactPageAddress">Phone: (503) 957-6161</p>
+                        <p id="contactPageAddress">Email: willamettefallssymphony@gmail.com</p>
+
+                    </div>
+                </div>
+
+                <div id="contactPageMap">
+                    
+                </div>
+
+                <div id="spacing"></div>
+
+                
+                    <form id="contactPageForm" onSubmit={sendEmail}>
+                        <div id="messageSentContactPage">
+                            <p>Thank you for contacting the symphony</p>
+                        </div>
+                        <p id='contactPageFormHeader'>Message The Symphony</p>
+                        <p>Your Name</p>
+                        <input type="text" placeholder="Your name" name="name"></input>
+                        <p>Your Email</p>
+                        <input type="email" placeholder="Your email" name="email"></input>
+                        <p>Your Subject</p>
+                        <input placeholder="Subject" name="subject"></input>
+                        <p>Your Message</p>
+                        <textarea type="text" placeholder="Type your message here" name="message"></textarea>
+                        <div>
+                            <button id="contactPageBtn" value="Send">SUBMIT</button>
+                        </div>
+                    </form>
+            
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

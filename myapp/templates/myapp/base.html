@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        {% load static %}
+        <meta charset="utf-8">
+        <link rel="stylesheet"  href="{% static 'willfalls/style.css'  %}">
+
+        <title></title>
+    </head>
+    <body>
+        <div id="app">
+            {% comment %} <p> [[ message ]] </p> {% endcomment %}
+            <div id="containerHeader">
+                <a href="{% url 'myapp:base' %}" id="containerHeaderLeft">  
+                    <img src="{% static "willfalls/media/logo.jpg" %}"></img>
+
+                        <div id="logoText" >Willamette Falls Symphony</div>
+
+                        <div  id="mobileDropDownBtn"></div> 
+
+                        <div  id="mobileDropDownBtnX"></div> 
+                </a>         
+                <div id="containerHeaderMiddle">
+
+                    <a href="{% url 'myapp:about' %}" class="middleLink" >About <span id="downMenuIcon"></span></a>
+
+                    <a href="{% url 'myapp:members' %}" class="middleLink" >Current Members</a>
+
+                    <a href="{% url 'myapp:support' %}" class="middleLink" >Support Us</a>
+
+                    <a href="{% url 'myapp:events' %}" class="middleLink" >Events</a>
+
+                </div>
+                
+                <div id="containerHeaderRight">
+
+                    <a href="{% url 'myapp:contact' %}" id="rightLinkId1" class="rightLink">Contact</a>
+
+                    <a href="{% url 'myapp:stayuptodate' %}" id="rightLinkId2" class="rightLink" >Stay Up To Date</a>
+                </div>
+            </div>
+
+            {% block landing %}        
+            {% endblock %} 
+
+            {% block about %}        
+            {% endblock %} 
+
+            {% block members %}        
+            {% endblock %} 
+
+            {% block support %}        
+            {% endblock %} 
+
+            {% block events %}        
+            {% endblock %} 
+
+            {% block contact %}        
+            {% endblock %} 
+
+            {% block sutd %}        
+            {% endblock %} 
+
+
+            <div id="footerTop"></div>
+                <div id="footer">
+                    <div id='footerContainer'>
+                        <div>
+                            <p className="footerTitle">ADDRESS</p>
+                            <p>Oregon City United Methodist Church</p>
+                            <p>18955 S. South End Rd.</p>
+                            <p>Oregon City, OR 97045-8331</p>
+                        </div>
+                        <div>
+                            <p className="footerTitle">CONTACT</p>
+                            <p>(503) 957-6161</p>
+                            <p>willamettefallssymphony@gmail.com</p>
+                        </div>
+                        <div id="footerLinks">
+                            <div>
+                                <p className="footerLink">EVENTS</p>
+                                <p className="footerLink">DONATE</p>
+                            </div>
+                            <div>
+                                <p className="footerLink">CONTACT</p>
+                                <p className="footerLink">NEWSLETTER</p>
+                            </div>
+                        </div>
+                    </div>
+                <div id="footerBottom">
+                    <p>WILLAMETTE FALLS SYMPHONY, 2021</p>
+                    <p>Odyssey Web Design</p>
+                </div>
+            </div>
+        </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script src="https://unpkg.com/vue2-smooth-scroll"></script>
+        <script>
+        var app = new Vue({
+        el: '#app',
+        delimiters: ['[[', ']]'],
+        data: {
+            message: 'Hello Vue!'
+        }
+        })
+    </script>
+</body>
+</html>

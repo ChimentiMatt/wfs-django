@@ -1,0 +1,34 @@
+{% extends 'myapp/base.html' %}  
+{% load static %}
+
+{% block support %}
+    <div id="supportUsPage">
+        <Header />
+        <div id="paymentContainer">
+          <div id="payment">
+            <p id="paymentTitle">SUPPORT THE SYMPHONY</p>
+
+            <div id="inputAmountContainer">
+              <p>DONATION AMOUNT</p>
+              <input ></input>
+            </div>
+            <p id="paymentText">Thank you for helping The Willamette Falls Symphony continue to be part of our community</p>
+
+            <div id="checkboxAmountContainer">
+              <input type="checkbox"
+                id="donateCheckbox">
+              </input>
+              <p>MAKE THIS A MONTHLY RECURRING GIFT</p>
+            </div>
+            <p id="disclaimerText">Disclaimer text. Your payment will be processed on the x of each month. Cancel any time.</p>
+
+            <div id="paymentBtns" >
+
+           
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+{% endblock %}
