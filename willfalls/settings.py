@@ -27,7 +27,6 @@ SECRET_KEY = 'django-insecure-ak*-m13fo6pu5(((xqu*67kt3x1z^wa#f)nh8ukw8d$q1q*6p5
 DEBUG = True
 
 ALLOWED_HOSTS = ['willfallsymph.herokuapp.com']
-# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -128,9 +127,5 @@ STATIC_URL = '/static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_ROOT = os.path.join(BASE_DIR,  'static')
