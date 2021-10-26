@@ -1,1 +1,1 @@
-Web gunicorn willfalls.wsgi
+web: gunicorn willfalls.wsgi
