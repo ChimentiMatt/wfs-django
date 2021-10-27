@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Merriweather Sans */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: none;
+    font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -158,12 +162,12 @@ height: 60%;
 
 #landingCard1{
     display: flex;
-    height: 17rem;
+    height: 15rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 #landingCard1Left{
-    width: 60%;
-    object-fit: contain;
+    width: 100%;
+    object-fit: cover;
 }
   
 #landingCard1Link{
@@ -192,20 +196,21 @@ height: 60%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 35%;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    width: 25%;
+    padding-left: 1em;
+    padding-right: 1em;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     background-color: #333;
     background: #1d1d1d;
     background-color: #093963;
+    display: none;
 }
 
 #landingCard2{
     display: flex;
-    height:15rem;
     height: 17rem;
+    height: 15rem;
     margin-top: 2rem;
   }
   
@@ -233,7 +238,7 @@ height: 60%;
   }
   #landingCard1Title{
     font-size: 2.5rem;
-    /* display: none; */
+    display: none;
   }
   
 
@@ -361,7 +366,8 @@ height: 60%;
   text-decoration: none;
   color: black;
   color: white;
-  border-radius: .2rem;
+  border-radius: .2rem; 
+  border: none;
 }
 
 #giveBackBtn:hover{
@@ -501,7 +507,7 @@ height: 60%;
 }
 
 #submitBtn:hover{
-  background-color: #1d1d1d;
+  background-color:#093963;
   color: white;
 }
 
@@ -524,7 +530,7 @@ height: 60%;
   display: flex;
   margin-left: 20vw;
   margin-right: 20vw;
-  width: 60vw;
+  width: 70vw;
 
   margin-top: 4rem;
 }
@@ -534,8 +540,9 @@ height: 60%;
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 7em;
+  left: 6rem;
   width: 9rem;
+  margin-top: 1rem;
 }
 
 #aboutNavbarRight{
@@ -614,10 +621,13 @@ height: 60%;
   font-size: 1.5rem;
 }
 
+
+
 #boardOrchestraContainer{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  text-align: center;
 }
 
 .friendsTitle{
@@ -654,10 +664,18 @@ height: 60%;
 }
 #theBoardContainer{
   display: flex;
+  justify-content: center;
+
 }
 #theBoardTitleColumn{
 
 }
+#communityTitle{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 .theBoardTitles{
   margin-right: 5rem;
   margin-top: .5rem;
@@ -665,17 +683,21 @@ height: 60%;
 }
 
 .communityColumnLeft{
-  margin-right: 5rem;
+  /* margin-right: 5rem; */
+  width: 10rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
+  margin-left: 0rem;
   font-family: 'Work Sans', sans-serif;
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  text-align: start;
 }
 .communityColumnRight{
-  margin-right: 5rem;
+  /* margin-right: 5rem; */
+  width: 10rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -1252,7 +1274,7 @@ height: 60%;
     display: flex;
     flex-direction: column;
     position: fixed;
-    left: 4em;
+    left: 3rem;
     width: 9rem;
   }
 }
@@ -1578,6 +1600,7 @@ height: 60%;
     flex-direction: row;
     background-color: white;
     display: none;
+
   }
   .aboutNavbarLink{
     background-color: white;
@@ -1687,7 +1710,7 @@ height: 60%;
     font-size: 3rem;
     height: 4rem;
     font-weight: bold;
-
+    
   }
   .AboutHeaders{
     font-size: 2rem;
