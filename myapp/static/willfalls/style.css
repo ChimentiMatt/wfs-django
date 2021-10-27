@@ -35,7 +35,7 @@
 }
   
 #containerHeaderLeft img {
-height: 60%;
+  height: 60%;
 }
 
   
@@ -149,9 +149,9 @@ height: 60%;
     font-size: 4rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    color: #093963;
     color: #1d1d1d;
     color: black;
+    color: #093963;
 }
 
 #cardsContainer {
@@ -249,7 +249,7 @@ height: 60%;
 
 
   #landingCardTitles{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
   }
@@ -659,12 +659,10 @@ height: 60%;
 
 }
 
-#theBoardNamesColumnFriends p{
 
-}
 #theBoardContainer{
   display: flex;
-  justify-content: center;
+  justify-content: space-between  ;
 
 }
 #theBoardTitleColumn{
@@ -687,10 +685,9 @@ height: 60%;
   width: 10rem;
   margin-top: .5rem;
   margin-bottom: .5rem;
-  margin-left: 0rem;
   font-family: 'Work Sans', sans-serif;
-  /* font-size: 2rem; */
   text-align: start;
+  margin-left: 20rem;
 }
 .communityColumnRight{
   /* margin-right: 5rem; */
@@ -699,6 +696,9 @@ height: 60%;
   margin-bottom: .5rem;
   /* font-size: 2rem; */
   font-family: 'Work Sans', sans-serif;
+  text-align: start;
+  margin-right: 20rem;
+
 }
 
 #communityThankYou{
@@ -1290,7 +1290,7 @@ height: 60%;
 
   #containerHeader{
     top: 0;
-    height: 4rem;
+    height: 8rem;
   }
   #containerVidoePage{
       height: 60vh;
@@ -1315,19 +1315,19 @@ height: 60%;
 
   }
   #containerHeaderRight{
-    display: none;
+    /* display: none; */
   }
   #containerHeaderMiddle{
-    display: none;
+    /* display: none; */
   }
   #containerHeaderLeft{
     left: 2px;
     justify-content: space-between;
-    width: 100vw;
+
   }
   #containerHeaderLeft img{
     justify-content: space-between;
-    height: 2rem;
+
     margin-top: .5rem;
     margin-left: .5rem;
     
@@ -1753,16 +1753,19 @@ height: 60%;
   }
   .communityColumnLeft{
     margin-right: 0;
+    width: 20rem;
+    font-size: 2rem;
+    margin-left: 5rem;
   }
 
-
+  .communityColumnRight{
+    margin-right: 5rem;
+    width: 20rem;
+    font-size: 2rem;
+  }
   #theBoardNamesColumn{
     width: 50%;
   }
-  .communityColumnRight{
-    margin-right: 0;
-  }
-
   .friend{
     margin-left: 1rem;
     margin-right: 1rem;
