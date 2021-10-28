@@ -214,33 +214,32 @@
     margin-top: 2rem;
   }
   
-  #landingCard2Left{
-    width: 50%;
-  }
-  
-  #landingCard2Left img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  
-  #landingCard2Right{
-    width: 50%;
-    margin-left: 3%;
-  }
-  
-  #landingCard2Right img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  #landingCard1Title{
-    font-size: 2.5rem;
-    display: none;
-  }
-  
+#landingCard2Left{
+  width: 50%;
+}
+
+#landingCard2Left img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#landingCard2Right{
+  width: 50%;
+  margin-left: 3%;
+}
+
+#landingCard2Right img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#landingCard1Title{
+  font-size: 2.5rem;
+  display: none;
+}
 
 
 
@@ -248,79 +247,86 @@
 
 
 
-  #landingCardTitles{
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-  }
 
-  #cardBottomTitleLeft{
-    width: 50%;
-  }
+#landingCardTitles{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
 
-  .header{
-    font-size: 1.5rem;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
-    color: #1d1d1d;
-    color: #093963;
-  }
+#cardBottomTitleLeft{
+  width: 50%;
+}
 
-  #cardBottomText{
-    font-size: 1.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    color: #1d1d1d;
-    font-weight: lighter;
-  }
+.header{
+  font-size: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #1d1d1d;
+  color: #093963;
+}
 
-  .learnMoreLink{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.5rem;
-    margin-top: .5rem;
-    color: #093963;
-    color: #333;
-    color: black;
-  }
-  #cardBottomTitleRight{
-    width: 50%;
-    margin-left: 3%;
-  }
+#cardBottomText{
+  font-size: 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  color: #1d1d1d;
+  font-weight: lighter;
+}
+
+.learnMoreLink{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  color: #093963;
+  color: #333;
+  color: black;
+}
+#cardBottomTitleRight{
+  width: 50%;
+  margin-left: 3%;
+}
 
 
 
-  /* Landing Address Section */
+/* Landing Address Section */
 
-  #addressSection{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* margin-top: 7vh; */
-    margin-bottom: 20vh;
-    height: 60vh;
-    background: #333;
-    background-color: #093963;
-    background-color: #1d1d1d;
-    color: white;
-  }
-  #addressLeft{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-left: 3rem;
-    height: 60%;
-    width: 45%;
-  }
-  #addressLeft p{
-    margin-top: .2rem;
-    font-size: 1.5rem;
-  }
-  
-  
+#addressSection{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 7vh; */
+  margin-bottom: 20vh;
+  height: 60vh;
+  background: #333;
+  background-color: #093963;
+  background-color: #1d1d1d;
+  color: white;
+}
+#addressLeft{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 8%;
+  height: 60%;
+  width: 45%;
+
+}
+#addressLeft p{
+  margin-top: .2rem;
+  font-size: 1.5rem;
+}
+
+#landingMap{
+  height: 60vh;
+  object-fit: contain;
+}
+
+
 #addressTitle{
   font-size: 4rem;
   margin-bottom: 1rem;
@@ -781,11 +787,7 @@
   height: 100%;
 }
 
-#contactPageMap{
-  margin-top: 2.5rem;
-  height: 20rem;  
-  background-color: wheat;
-}
+
 
 #contactPageRows{
   display: flex;
@@ -1090,8 +1092,14 @@
 
 #contactPageMap{
   margin-top: 2.5rem;
-  height: 20rem;  
-  background-color: wheat;
+  width: 100%; 
+  object-fit: contain;
+}
+
+#mapImg{
+ /* height: 20rem; */
+ object-fit: contain;
+ width: 100%;
 }
 
 #contactPageRows{
@@ -1550,6 +1558,8 @@
   #addressLine{
     margin-left: 1rem;
   }
+
+
 
   #landingCard2{
     margin-top: 1rem;

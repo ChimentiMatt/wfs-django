@@ -9,7 +9,6 @@
     </head>
     <body>
         <div id="app">
-            {% comment %} <p> [[ message ]] </p> {% endcomment %}
             <div id="containerHeader">
                 <a href="{% url 'myapp:base' %}" id="containerHeaderLeft">  
                     <img src="{% static "willfalls/media/logo.jpg" %}"></img>
@@ -24,7 +23,7 @@
 
                     <a href="{% url 'myapp:about' %}" class="middleLink" >About <span id="downMenuIcon"></span></a>
 
-                    {% comment %} <a href="{% url 'myapp:members' %}" class="middleLink" >Current Members</a> {% endcomment %}
+                    <a class="middleLink" >Current Members</a>
 
                     <a href="{% url 'myapp:support' %}" class="middleLink" >Support Us</a>
 
@@ -95,32 +94,20 @@
             </div>
         </div>
 
-        {% comment %} googlemaps  {% endcomment %}
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
-      async
-    ></script>
+    
 
-        <script src="https://unpkg.com/vue/dist/vue.js"></script>
-        <script src="https://unpkg.com/vue2-smooth-scroll"></script>
-        <script>
+
+
+
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue2-smooth-scroll"></script>
+    <script>
         var app = new Vue({
 
             el: '#app',
             delimiters: ['[[', ']]'],
 
-            data: {
-                message: 'Hello Vue!'
-            }
-            methods: {
-                initMap: function () {
-                let map;
-                map = new google.maps.Map(document.getElementById("map"), {
-                    center: { lat: -34.397, lng: 150.644 },
-                    zoom: 8,
-                });
-                }
-            }
 
         })
         
