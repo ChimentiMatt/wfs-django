@@ -388,7 +388,7 @@
   margin-top: 5rem;
   background-color: #093963;
   background: #1a1a1a;
-  margin-bottom: 10rem;
+
 }
 
 #messageSent{
@@ -921,6 +921,19 @@
   height: 5rem;
   background-image: linear-gradient(to bottom, #093963, #1f3150, #24293e, #22232d, #1d1d1d);
 }
+#footerContainer{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  color: white;
+  justify-content: space-between;
+}
+
+.footerContainerAddressAndContact{
+  height: 5rem;
+}
 
 .footerTitle{
   font-size: 2rem;
@@ -935,15 +948,7 @@
   /* margin-top: 10rem; */
 }
 
-#footerContainer{
-  display: flex;
-  height: 100%;
-  align-items: center;
-  margin-left: 20vw;
-  margin-right: 20vw;
-  color: white;
-  justify-content: space-between;
-}
+
 #footerLogo{
   height: 4rem;
 }
@@ -952,12 +957,29 @@
   font-weight: bold;
   display: flex;
   width: 10rem;
+  align-items: center;
   justify-content: space-between;
+  height: 5rem;
+  margin-top: 2.5rem;
 }
 
 .footerLink{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  /* margin-top: 1rem;
+  margin-bottom: 1rem; */
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.footerLink:hover{
+  opacity: .7;
+}
+
+.footerLinksInner{
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #footerBottom{
@@ -1259,12 +1281,11 @@
 }
 
 
-
-
-
-
-
-
+/* Events Page */
+#eventsPage{
+  height: 80vh;
+  text-align: center;
+}
 
 
 

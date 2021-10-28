@@ -24,7 +24,7 @@
 
                     <a href="{% url 'myapp:about' %}" class="middleLink" >About <span id="downMenuIcon"></span></a>
 
-                    <a href="{% url 'myapp:members' %}" class="middleLink" >Current Members</a>
+                    {% comment %} <a href="{% url 'myapp:members' %}" class="middleLink" >Current Members</a> {% endcomment %}
 
                     <a href="{% url 'myapp:support' %}" class="middleLink" >Support Us</a>
 
@@ -65,25 +65,26 @@
             <div id="footerTop"></div>
                 <div id="footer">
                     <div id='footerContainer'>
-                        <div>
-                            <p className="footerTitle">ADDRESS</p>
+                        <img id="footerLogo" src="{% static "willfalls/media/logo.jpg" %}"></img>
+                        <div class="footerContainerAddressAndContact">
+                            <p class="footerTitle">ADDRESS</p>
                             <p>Oregon City United Methodist Church</p>
                             <p>18955 S. South End Rd.</p>
                             <p>Oregon City, OR 97045-8331</p>
                         </div>
-                        <div>
-                            <p className="footerTitle">CONTACT</p>
+                        <div class="footerContainerAddressAndContact">
+                            <p class="footerTitle">CONTACT</p>
                             <p>(503) 957-6161</p>
                             <p>willamettefallssymphony@gmail.com</p>
                         </div>
                         <div id="footerLinks">
-                            <div>
-                                <p className="footerLink">EVENTS</p>
-                                <p className="footerLink">DONATE</p>
+                            <div class="footerLinksInner">
+                                <a href="{% url 'myapp:events' %}" class="footerLink" >EVENTS</a>
+                                 <a href="{% url 'myapp:support' %}"class="footerLink">DONATE</a>
                             </div>
-                            <div>
-                                <p className="footerLink">CONTACT</p>
-                                <p className="footerLink">NEWSLETTER</p>
+                            <div class="footerLinksInner">
+                                <a href="{% url 'myapp:contact' %}" class="footerLink">CONTACT</a>
+                                <a href="{% url 'myapp:stayuptodate' %}" class="footerLink">NEWSLETTER</a>
                             </div>
                         </div>
                     </div>
@@ -93,16 +94,36 @@
                 </div>
             </div>
         </div>
+
+        {% comment %} googlemaps  {% endcomment %}
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly&channel=2"
+      async
+    ></script>
+
         <script src="https://unpkg.com/vue/dist/vue.js"></script>
         <script src="https://unpkg.com/vue2-smooth-scroll"></script>
         <script>
         var app = new Vue({
-        el: '#app',
-        delimiters: ['[[', ']]'],
-        data: {
-            message: 'Hello Vue!'
-        }
+
+            el: '#app',
+            delimiters: ['[[', ']]'],
+
+            data: {
+                message: 'Hello Vue!'
+            }
+            methods: {
+                initMap: function () {
+                let map;
+                map = new google.maps.Map(document.getElementById("map"), {
+                    center: { lat: -34.397, lng: 150.644 },
+                    zoom: 8,
+                });
+                }
+            }
+
         })
-    </script>
+        
+        </script>
 </body>
 </html>
