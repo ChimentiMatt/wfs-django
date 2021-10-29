@@ -10,6 +10,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+#vid{
+  height: 10rem;
+}
+
 
 /* Navbar--------------------------------------------------------------------------------------------- */
 
@@ -457,7 +461,7 @@
 }
 
 #contactEmail{
-  /* width: 48%; */
+
 }
 
 #contactEmail:focus{
