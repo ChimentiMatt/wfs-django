@@ -2,9 +2,9 @@
 {% load static %}
 
 {% block landing %}
-	<video autoplay="autoplay" controls="controls" preload="preload">
+	{% comment %} <video autoplay="autoplay" controls="controls" preload="preload">
         <source id='vid' src="{% static "willfalls/media/video1.mp4" %}" type="video/mp4"></source>    
-    </video>
+    </video> {% endcomment %}
     <div id="facePlate">
         <p id="facePlateText">WILLAMETTE FALLS SYMPHONY</p>
     </div>
@@ -15,7 +15,8 @@
 
             <div id="landingCard1">
                 <div id="landingCard1Left">      
-                    {% comment %} <img src="{% static "willfalls/media/cardImg.jpeg" %}"></img> {% endcomment %}
+                    <img src="{% static "willfalls/media/cardImg.jpeg" %}"></img>
+
                 </div>
         
                 <div id="landingCard1Right">      
