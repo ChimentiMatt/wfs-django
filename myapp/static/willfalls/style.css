@@ -1519,7 +1519,7 @@
   }
 
   #landingGiveBackContainer{
-    margin-top: 2.5rem;
+    margin-top: 11rem;
     margin-bottom: 2.5rem;
   }
 
@@ -1559,7 +1559,10 @@
     margin-left: 1rem;
   }
 
-
+  #landingMap{
+    width: 100vw;
+    height: initial;
+  }
 
   #landingCard2{
     margin-top: 1rem;
@@ -1854,7 +1857,7 @@
   /* Give back page --------------------------------------------------------- */
   #paymentTitle{
     margin-left: 1rem;
-    font-size: 3rem;
+    font-size:4rem;
   }
   #inputAmountContainer{
     margin-left: 1rem;
@@ -1898,7 +1901,11 @@
 
   /* Footer ----------------------------------------------------------------------- */
   #footer{
-    height: 35rem;
+    height: 40rem;
+    /* margin-top: 10rem; */
+  }
+  #footerTop{
+    margin-top: 10rem;
   }
   #footerContainer{
     margin-left: 1rem;
@@ -1907,13 +1914,20 @@
   }
   #footerLogo{
     margin-top: 2.5rem;
+    height: 6rem;
   }
   #footerLinks{
-    margin-bottom: 2.5rem;
+    flex-direction: column;
     font-size: 1.5rem;
     width: 15rem;
 
   }
+  .footerContainerAddressAndContact{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+  }
 
 }
+
+
 
