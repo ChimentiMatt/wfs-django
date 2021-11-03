@@ -302,10 +302,13 @@
   align-items: center;
   /* margin-top: 7vh; */
   margin-bottom: 20vh;
-  height: 60vh;
+  /* height: 60vh; */
+  height: 595px;
   background: #333;
   background-color: #093963;
   background-color: #1d1d1d;
+  border-top: 4.5px solid #1d1d1d;
+
   color: white;
 }
 #addressLeft{
@@ -327,6 +330,9 @@
   object-fit: contain;
 }
 
+#addressRight{
+  width: 50%;
+}
 
 #addressTitle{
   font-size: 4rem;

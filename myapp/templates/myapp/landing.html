@@ -57,6 +57,7 @@
             </div>
         </div>
     </div>
+    
     <div id="addressSection">
         <div id="addressLeft">
                 <h1 id="addressTitle">CONCERT ADDRESS</h1> 
@@ -66,7 +67,10 @@
                 <p id="addressLine">Oregon City, OR 97045-8331</p>
             </div>
         </div>
-        <img id="landingMap" src="{% static "willfalls/media/mapImgLanding.PNG" %}"></img>
+        {% comment %} <img id="landingMap" src="{% static "willfalls/media/mapImgLanding.PNG" %}"></img> {% endcomment %}
+        <div class="mapouter" id="addressRight"><div class="gmap_canvas"><iframe width="101%" height="600px" id="gmap_canvas" src="https://maps.google.com/maps?q=Oregon%20City%20United%20Methodist%20Church%20%2018955%20S.%20South%20End%20Rd.%20%20Oregon%20City,%20OR%2097045-8331&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        <br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+               
     </div>
     <div id="landingGiveBackContainer">
         <p id="giveBackTitle">GIVE BACK TO THE SYMPHONY</p>
