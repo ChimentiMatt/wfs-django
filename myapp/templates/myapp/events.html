@@ -6,6 +6,9 @@
     <div id="eventsPage">
 
     <h1>Event information here</h1>
+    {% for post in object_list %}
+    {{ post.title }}
+    {% endfor %}
     </div>
 
 {% endblock %}

@@ -9,7 +9,7 @@ urlpatterns = [
     path('about/', AboutView, name='about'),
     path('members/', MembersView, name="members"),
     path('support/', SupportView, name="support"),
-    path('events/', EventsView, name="events"),
+    path('events/', EventsView.as_view(), name="events"),
     path('contact/', ContactView, name="contact"),
     path('stayuptodate/', StayUpToDateView, name="stayuptodate"),
 

@@ -1,6 +1,7 @@
 from django.shortcuts import render, reverse
+from django.views.generic import ListView, DetailView
 from django.http import HttpResponseRedirect, HttpResponse, request
-from .models import MyModel
+from .models import EventPosts
 
 
 def BaseView(request):
@@ -18,8 +19,9 @@ def MembersView(request):
 def SupportView(request):
     return render(request, 'myapp/support.html')
     
-def EventsView(request):
-    return render(request, 'myapp/events.html')
+class EventsView(ListView):
+    model = EventPosts
+    template_name = 'myapp/events.html'
 
 def ContactView(request):
     return render(request, 'myapp/contact.html')
