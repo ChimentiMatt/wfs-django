@@ -326,8 +326,7 @@
 }
 
 #landingMap{
-  height: 60vh;
-  object-fit: contain;
+  width: 9px;
 }
 
 #addressRight{
@@ -1526,7 +1525,7 @@
   }
 
   #landingGiveBackContainer{
-    margin-top: 11rem;
+    margin-top: 700px;
     margin-bottom: 2.5rem;
   }
 
@@ -1543,7 +1542,7 @@
   #addressSection{
     margin-top: 0rem;
     flex-direction: column;
-    height: 36rem;
+    height: 15rem;
     justify-content: flex-start;
     margin-bottom: 5rem;
     background: #1d1d1d;
@@ -1554,6 +1553,7 @@
     margin-top: 2.5rem;
     margin-bottom: 2.5rem;
     padding-left: 0;
+    justify-content: flex-start;
   }
   #addressTitle{
     text-align: center;
@@ -1566,25 +1566,21 @@
     margin-left: 1rem;
   }
 
-  #landingMap{
-    width: 100vw;
-    height: initial;
-  }
 
   #landingCard2{
     margin-top: 1rem;
   }
   #addressLeft p{
-
     font-size: 1.3rem;
   }
 
-  #addressRight{
-    width: 90%;
-    margin-top: 5rem;
-    height: 20rem;
-  }
 
+  #gmap_canvas{
+    position: absolute;
+    width: 100vw;
+    left: 0;
+
+  }
   #contactTitle{
     text-align: center;
     font-size: 3rem;
