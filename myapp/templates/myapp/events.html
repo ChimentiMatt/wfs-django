@@ -5,9 +5,14 @@
 
     <div id="eventsPage">
 
-    <h1>Event information here</h1>
+    <p id="eventPageTitle">UPCOMING EVENTS</p>
     {% for post in object_list %}
     {{ post.title }}
+    <br>
+    {{ post.summary }}
+    <br>
+    {{ post.body }}
+
     {% endfor %}
     </div>
 
