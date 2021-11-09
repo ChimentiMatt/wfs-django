@@ -1735,8 +1735,7 @@
   #contactPageRows{
     display: flex;
     justify-content: space-between;
-    /* width: 20rem; */
-    /* flex-direction: column; */
+
   }
   #contactPageRowsRight{
     justify-content: center;
