@@ -1150,7 +1150,7 @@
 
 /* Events Page */
 #eventsPage{
-  height: 80vh;
+  height: 60vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -1553,8 +1553,8 @@
   }
 
   #aboutNavbarRight{
-    width: auto;
-    /* width: 90vw; */
+    /* width: auto; */
+    width: 90vw;
   }
 
   #aboutSymphonyImg{
@@ -1794,7 +1794,7 @@
   #stayUpToDatePage{
     align-items: center;
     margin-left: 0rem;
-    height: 50vh;
+    height: 60vh;
   }
   #stayUpToDatePageText{
     font-size: 1rem;
@@ -1848,7 +1848,7 @@
 
   /* Support Page */
   #supportUsPage{
-    height: 50vh;
+    height: 60vh;
   }
 }
 
