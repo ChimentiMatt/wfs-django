@@ -8,6 +8,7 @@
     box-sizing: none;
     font-family: 'Merriweather Sans', sans-serif;
     font-family: 'Roboto Condensed', sans-serif;
+
 }
 
 
@@ -623,6 +624,7 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: 'Work Sans', sans-serif;
+
 }
 
 .boardTitlesTitle{
@@ -759,156 +761,6 @@
 
 
 
-
-
-
-
-
-
-
-
-/* Contact Page ------------------------------------------------------------------------------------------------------ */
-
-#contactPage{ 
-  display: flex;
-  flex-direction: column;
-}
-
-#contactPageHeader{
-  font-weight: 900;
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
-  color: #093963; 
-  color: #1d1d1d;
-  font-size: 4rem;
-}
-
-#contactPageMiddleContainer{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-
-
-#contactPageRows{
-  display: flex;
-  width: 50rem;
-}
-#contactPageRowsRight{
-  margin-left: 8rem;
-}
-
-#contactPageTitle{
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-#contactPagePreLoc{
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #093963;
-  color: #333;
-  font-weight: bolder;
-  font-size: 3rem;
-}
-
-#contactPageAddress{
-  font-family: 'Work Sans', sans-serif;
-  color: #333;
-}
-
-#contactPageFormHeader{
-  font-size: 3rem;
-  color: #093963;
-  color: #333;
-  font-weight: bold;
-}
-
-#contactPageForm{
-  margin-top: 1rem;
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  margin-bottom: 5rem;
-}
-
-#contactPageForm input{
-  border-radius: .2rem;
-  margin-bottom: .5rem;
-  height: 2rem;
-  padding-left: .5rem;
-  color: #333;
-  border: 1px solid rgba(51, 51, 51, 0.5);
-  font-size: 2rem;
-  padding: .5rem;
-  border-radius: 0rem;
-}
-#contactPageForm input:focus{
-  outline-width: 0;
- }
-
-#contactPageForm input::placeholder{
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#contactPageForm textarea{
-  border-radius: .2rem;
-  margin-bottom: .5rem;
-  height: 5rem;
-  font-size: 2rem;
-  padding: .5rem;
-  color: white;
-  color: #333;
-  resize: none;
-  border: 1px solid rgba(51, 51, 51, 0.5);
-}
-
-#contactPageForm textarea:focus{
-  outline-width: 0
-}
-
-#contactPageForm textarea::placeholder{
-  color: rgba(255, 255, 255, 0.7);
-}
-
-#contactPageBtn{
-  border: none;
-  margin-bottom: .5rem;
-  float: right;
-  background-color: #093963;
-  color: white;
-
-  border-radius: .2rem;
-  font-weight: 900;
-  margin-top: .5rem;
-  box-shadow: 2px 5px 5px;
-  padding: 1rem 2rem 1rem 2rem;
-  font-size: 1.2REM;
-}
-
-#contactPageBtn:hover{
-  background: #333;
-}
-
-#messageSentContactPage{
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-  font-weight: bold;
-  text-align: center;
-  width: 50rem;
-  height: 30rem;
-  background-color: white;
-  visibility: hidden;
-  opacity: 0;
-}
 
 
 
@@ -1081,8 +933,9 @@
 }
 
 #contactPageHeader{
-  font-weight: 900;
-  margin-top: 2.5rem;
+  /* font-weight: 900; */
+  font-weight: bold;
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
   color: #093963; 
   color: #1d1d1d;
@@ -1247,8 +1100,8 @@
 }
 
 #stayUpToDatePageText{
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
   font-weight: bold;
   color: #333;
 }
@@ -1627,7 +1480,7 @@
   }
   #contactFormSection{
     margin-top: 10rem;
-    margin-bottom: 15rem;
+
     height: 45rem;
     /* background-color: #093963; */
   }
@@ -1660,6 +1513,7 @@
 
   /* About Page --------------------------------------------------------------------- */
   #aboutContentContainer{
+    flex: initial;
     width: 90vw;
     margin-top: 2rem;
     margin-left: 5vw;
@@ -1675,17 +1529,32 @@
     display: none;
 
   }
+
+  .AboutTexts{
+    width: 90vw;
+  }
+  #prosPGap{
+    width: 90vw;
+  }
+  #playerP{
+    width: 90vw;
+  }
+  #communityThankYou{
+    width: 90vw;
+  }
   .aboutNavbarLink{
     background-color: white;
     font-size: .8rem;
     border: none;
   }
+
   #aboutNavbarLinkMark{
     margin-bottom: 1rem;
   }
 
   #aboutNavbarRight{
     width: auto;
+    /* width: 90vw; */
   }
 
   #aboutSymphonyImg{
@@ -1828,11 +1697,13 @@
     margin-right: 0;
     width: 20rem;
     font-size: 2rem;
-    margin-left: 5rem;
+    margin-left: 0rem;
+    text-align: center;
   }
 
   .communityColumnRight{
-    margin-right: 5rem;
+    margin-left: 2.5rem;
+    text-align: center;
     width: 20rem;
     font-size: 2rem;
   }
@@ -1840,8 +1711,8 @@
     width: 50%;
   }
   .friend{
-    margin-left: 1rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
+    /* margin-left: 1rem; */
     font-size: 2rem;
   }
 
@@ -1945,9 +1816,7 @@
     height: 40rem;
     /* margin-top: 10rem; */
   }
-  #footerTop{
-    margin-top: 10rem;
-  }
+
   #footerContainer{
     margin-left: 1rem;
     margin-right: 1rem;
