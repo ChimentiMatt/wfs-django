@@ -1719,9 +1719,9 @@
   /* Contact Page --------------------------------------------------------- */
   #contactPageHeader{
     font-size: 3rem;
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     margin-bottom: 1rem;
-    width: 20rem;
+    /* width: 20rem; */
   }
   #contactPageMiddleContainer{
     padding-left: 1rem;
@@ -1733,16 +1733,20 @@
     font-size: 2rem;
   }
   #contactPageRows{
-    width: 20rem;
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    /* width: 20rem; */
+    /* flex-direction: column; */
   }
   #contactPageRowsRight{
-    
+    justify-content: center;
+    align-items: center;
     margin-left: 0rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
   }
   #contactPageMap{
-    width: 90%;
+
+    height: 20rem;
   }
   #contactPageFormHeader{
     font-size: 2rem;
