@@ -1163,6 +1163,15 @@
   font-size: 4rem;
   font-weight: bold;
 }
+#eventsPosts{
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+
+
 
 @media (max-width: 1300px) {
 
@@ -1735,8 +1744,8 @@
   #contactPageRows{
     display: flex;
     justify-content: space-between;
-
   }
+
   #contactPageRowsRight{
     justify-content: center;
     align-items: center;
